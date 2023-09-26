@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import useGetAll from '../../Hooks/useGetAll';
+
 
 export default function Home() {
-  return (
-    <div>Home</div>
+    const [beData, setBeData] = useState([]);
+    const getAll = useGetAll();
+    const URL = '/api';
+
+    useEffect(() => {
+        getAll(URL).then((data) => {
+            setBeData(data);
+        })
+    }, []);
+  
+    return (
+    <>
+        <div>Home</div>
+        <div>{beData || "ji"}</div>
+    </>
   )
 }
