@@ -1,9 +1,8 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-export const HomeStyle = styled(Box)(({ theme }) => ({
-    paddingBottom:theme.spacing(7),
-
+export const NavBarStyle = styled(Box)(({ theme }) => ({
+    paddingBottom:theme.spacing(2),
     
     "& .headerBox":{
         display:"flex",
@@ -24,8 +23,13 @@ export const HomeStyle = styled(Box)(({ theme }) => ({
         marginRight: '15px'
     },
     "& .icon": {
-        color: "white",
-        fontSize: theme.spacing(5)
+        color:"white",
+        backgroundColor: "#592186",
+        fontSize: theme.spacing(5),
+        border:"white",
+        borderStyle: "outset",
+        borderRadius: "5px",
+        borderWidth: "thin",
     }
     
   }

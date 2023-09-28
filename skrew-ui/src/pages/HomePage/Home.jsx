@@ -1,6 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
 import useGetAll from '../../Hooks/useGetAll';
-
 
 export default function Home() {
     const [beData, setBeData] = useState([]);
@@ -12,11 +12,10 @@ export default function Home() {
             setBeData(data);
         })
     }, []);
-  
+
+
+
     return (
-    <>
-        <div>Home</div>
-        <div>{beData || "ji"}</div>
-    </>
+    <div>hji</div>
   )
 }
