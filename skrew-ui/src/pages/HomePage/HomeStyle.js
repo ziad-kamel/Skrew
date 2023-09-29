@@ -2,30 +2,17 @@ import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const HomeStyle = styled(Box)(({ theme }) => ({
-    paddingBottom:theme.spacing(7),
-
-    
-    "& .headerBox":{
-        display:"flex",
-        alignItems:'center',
-        justifyContent: 'space-between',
-        backgroundColor: "#401761",
-    },
-    "& .iconTxtBox":{
-        display:"flex",
-        alignItems: 'center'
-    },
-    "& .iconBox": {
-        width: theme.spacing(6),
-        height: theme.spacing(6),
+    "& .card":{
+        height: '40px',
         display: 'flex',
-        alignItems: 'center',
         justifyContent: 'center',
-        marginRight: '15px'
+        alignItems:'center',
+        backgroundImage: "linear-gradient(90deg, #e924c4, #ffd300)"
     },
-    "& .icon": {
-        color: "white",
-        fontSize: theme.spacing(5)
+    "& .card p":{
+        fontFamily: "monospace",
+        fontWeight: "bold",
+        fontSize: "1.36rem"
     }
     
   }
