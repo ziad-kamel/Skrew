@@ -14,15 +14,15 @@ export default function One({cardScore, cardNumber, cardBaseColor, numberColor, 
                         <div className='BLball'></div>
 
                         <Grid item className='TLCardScore'>
-                            <Typography fontSize={'3.6rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
+                            <Typography fontSize={'3.3rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
                         </Grid>
                         <Grid item className='BRCardScore'>
-                            <Typography fontSize={'3.6rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
+                            <Typography fontSize={'3.3rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
                         </Grid>
                         <Grid item className="CardTxtNumber" display={'flex'} flexDirection={'column'} alignItems={'center'}>
                             <Typography>{cardText || ""}</Typography>
                             <Grid item className="iconNumber">
-                                <Typography fontSize={'20rem'} fontWeight={'700'} fontFamily={'emoji'} color={numberColor}>{cardNumber}</Typography>
+                                <Typography fontSize={'18rem'} fontWeight={'700'} fontFamily={'emoji'} color={numberColor}>{cardNumber}</Typography>
                             </Grid>
                         </Grid>
                     </Grid>
