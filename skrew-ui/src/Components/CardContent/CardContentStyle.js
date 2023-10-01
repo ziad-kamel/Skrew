@@ -59,15 +59,15 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         transform: 'rotate(180deg)',
     },
     "& .iconNumber":{
-        width: '17rem',
-        height: '17rem',
-        margin: "8px",
+        width: '14rem',
+        height: '14rem',
+        margin: "22px",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '10rem',
         border: 'solid',
-        borderWidth: '12px',
+        borderWidth: '7px',
         borderColor: borderColor
     }
   }
