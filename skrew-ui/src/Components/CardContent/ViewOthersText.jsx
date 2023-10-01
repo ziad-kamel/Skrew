@@ -3,7 +3,7 @@ import ReactCurvedText from 'react-curved-text'
 
 export default function ViewOthersText({cardText, cardTextColor}) {
   return (
-    <div className='path' style={{position: 'absolute', top:'68px'}}>
+    <div className='path' style={{position: 'absolute', top:'74px'}}>
         <ReactCurvedText 
             width='18rem'
             height='5rem'

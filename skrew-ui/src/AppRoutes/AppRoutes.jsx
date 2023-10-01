@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ViewMineCard from '../Components/Cards/BasicNumbers/ComandCards/ShowCards/ViewMineCard/ViewMineCard';
+import ViewOtherCard from '../Components/Cards/BasicNumbers/ComandCards/ShowCards/viewOthersCard/ViewOtherCard';
 import GenericCard from '../Components/Cards/BasicNumbers/GenericCard/GenericCard';
 import NavBar from '../Components/NavBar/NavBar';
 import Home from '../pages/HomePage/Home';
@@ -19,8 +20,8 @@ export default function AppRoutes() {
             <Route path='/six' element={<GenericCard cardNumber={6} cardScore={6} />}/>
             <Route path='comand/seven' element={<ViewMineCard cardNumber={7} cardScore={7} numberColor={"#05797E"} cardText={"بص في ورقتك"}/>}/>
             <Route path='comand/eight' element={<ViewMineCard cardNumber={8} cardScore={8} numberColor={"#05797E"} cardText={"بص في ورقتك"}/>}/>
-            <Route path='comand/nine' element={<ViewMineCard cardNumber={9} cardScore={9} numberColor={"#05797E"} cardText={"بص في ورقة غيرك"}/>}/>
-            <Route path='comand/ten' element={<ViewMineCard cardNumber={10} cardScore={10} numberColor={"#05797E"} cardText={"بص في ورقة غيرك"}/>}/>
+            <Route path='comand/nine' element={<ViewOtherCard cardNumber={9} cardScore={9} numberColor={"#05797E"} cardText={"بص في ورقة غيرك"}/>}/>
+            <Route path='comand/ten' element={<ViewOtherCard cardNumber={10} cardScore={10} numberColor={"#05797E"} cardText={"بص في ورقة غيرك"}/>}/>
             </>
         </Routes>
     </Router>

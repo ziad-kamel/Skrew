@@ -4,7 +4,7 @@ import { CardContentStyle } from './CardContentStyle'
 import ViewMineText from './ViewMineText'
 import ViewOthersText from './ViewOthersText'
 
-export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor}) {
+export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
 
   const chooseComand = (number) => {
     if(number == 7 || number == 8){
@@ -31,6 +31,7 @@ export default function CardContent({cardScore, cardText, cardNumber, cardBackgr
             <Grid item className="iconNumber">
                 <Typography fontSize={'10rem'} fontWeight={'700'} fontFamily={"'IBM Plex Mono', monospace"} color={numberColor}>{cardNumber}</Typography>
             </Grid>
+        {extraElements}
         </Grid>
       </Grid>
     </CardContentStyle>
