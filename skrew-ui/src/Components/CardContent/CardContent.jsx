@@ -2,9 +2,9 @@ import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { CardContentStyle } from './CardContentStyle'
 
-export default function CardContent({cardScore, cardText, cardNumber, numberColor}) {
+export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor}) {
   return (
-    <CardContentStyle>
+    <CardContentStyle cardBackgroundColor={cardBackgroundColor} borderColor={numberColor}>
       <Grid item >
         <div className='TRball'></div>
         <div className='BLball'></div>

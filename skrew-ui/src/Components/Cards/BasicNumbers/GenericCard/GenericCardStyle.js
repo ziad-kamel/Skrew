@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-export const OneStyle = styled(Box)(({ theme, cardBaseColor }) => ({
+export const GenericCardStyle = styled(Box)(({ theme }) => ({
 
     "& .CardFrame":{
         backgroundColor: 'white',

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-export const CardContentStyle = styled(Box)(({ theme, cardBaseColor }) => ({
+export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borderColor}) => ({
 
     height: '29rem',
     width: '21rem',
@@ -10,15 +10,15 @@ export const CardContentStyle = styled(Box)(({ theme, cardBaseColor }) => ({
     alignItems: 'center',
     border: 'solid',
     borderWidth: '26px',
-    borderColor: '#3f1561',
+    borderColor: borderColor,
     borderRadius: '32px',
     position: "relative",
-    backgroundColor: cardBaseColor,
+    backgroundColor: cardBackgroundColor || "white",
     
     "& .TRball":{
         width: '3rem',
         height: '3rem',
-        backgroundColor: '#3f1561',
+        backgroundColor: borderColor,
         position: 'absolute',
         top: '-14px',
         right: '-14px',
@@ -27,14 +27,14 @@ export const CardContentStyle = styled(Box)(({ theme, cardBaseColor }) => ({
     "& .BLball":{
         width: '3rem',
         height: '3rem',
-        backgroundColor: '#3f1561',
+        backgroundColor: borderColor,
         position: 'absolute',
         bottom: '-14px',
         left: '-14px',
         borderRadius: '2rem'
     },
     "& .TLCardScore":{
-        backgroundColor: '#3f1561',
+        backgroundColor: borderColor,
         width: '3.2rem',
         height: '4.5rem',
         position: 'absolute',
@@ -46,7 +46,7 @@ export const CardContentStyle = styled(Box)(({ theme, cardBaseColor }) => ({
         alignItems: 'center',
     },
     "& .BRCardScore":{
-        backgroundColor: '#3f1561',
+        backgroundColor: borderColor,
         width: '3.2rem',
         height: '4.5rem',
         position: 'absolute',
@@ -68,7 +68,7 @@ export const CardContentStyle = styled(Box)(({ theme, cardBaseColor }) => ({
         borderRadius: '10rem',
         border: 'solid',
         borderWidth: '12px',
-        borderColor: '#3f1561'
+        borderColor: borderColor
     }
   }
   ));
