@@ -7,10 +7,10 @@ import ViewOthersText from './ViewOthersText'
 export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
 
   const chooseComand = (number) => {
-    if(number == 7 || number == 8){
+    if(number === 7 || number === 8){
       return (<ViewMineText cardText={cardText || ""} cardTextColor={numberColor}/>)
     }
-    else if(number == 9 || number == 10){
+    else if(number === 9 || number === 10){
       return(<ViewOthersText cardText={cardText||""} cardTextColor={numberColor}/>)
     }
   }
