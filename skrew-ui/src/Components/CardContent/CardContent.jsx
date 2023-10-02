@@ -2,8 +2,8 @@ import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { CardContentStyle } from './CardContentStyle'
 import CardScores from './CardScore/CardScores'
-import ViewMineText from './ViewMineText'
-import ViewOthersText from './ViewOthersText'
+import ViewMineText from './View/ViewMineText'
+import ViewOthersText from './View/ViewOthersText'
 
 export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
   var underLined = false;
