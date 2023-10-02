@@ -6,11 +6,10 @@ import ViewMineText from './ViewMineText'
 import ViewOthersText from './ViewOthersText'
 
 export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
-  var lined = false;
-  if(cardNumber === 9 || cardNumber === 6){
-
-    lined = true
-  }
+  var underLined = false;
+  if(cardNumber === 9 || cardNumber === 6)
+    underLined = true
+  
   const chooseComand = (number) => {
     if(number === 7 || number === 8){
       return (<ViewMineText cardText={cardText || ""} cardTextColor={numberColor}/>)
@@ -21,7 +20,7 @@ export default function CardContent({cardScore, cardText, cardNumber, cardBackgr
   }
   return (
     <CardContentStyle cardBackgroundColor={cardBackgroundColor} borderColor={numberColor}>
-      <Grid item >
+      <Grid item>
         <div className='TRball'></div>
         <div className='BLball'></div>
         <CardScores borderColor={numberColor} cardScore={cardScore}/>
@@ -29,7 +28,7 @@ export default function CardContent({cardScore, cardText, cardNumber, cardBackgr
             {chooseComand(cardNumber)}
             <Grid item className="iconNumber">
                 <Typography fontSize={'10rem'} fontWeight={'700'} fontFamily={"'IBM Plex Mono', monospace"} color={numberColor}>{cardNumber}</Typography>
-                {lined?<div className='underLine'/>:<></>}
+                {underLined?<div className='numberUnderLine'/>:<></>}
             </Grid>
         {extraElements}
         </Grid>

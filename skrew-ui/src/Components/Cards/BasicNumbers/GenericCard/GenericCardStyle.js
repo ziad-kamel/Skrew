@@ -4,11 +4,11 @@ import { styled } from "@mui/system";
 export const GenericCardStyle = styled(Box)(({ theme }) => ({
 
     "& .CardFrame":{
-        backgroundColor: 'white',
+        // backgroundColor: 'white',
         padding: "1.3rem 11rem",
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }
   }
   ));

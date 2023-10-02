@@ -4,7 +4,7 @@ import { styled } from "@mui/system";
 export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borderColor}) => ({
 
     height: '29rem',
-    width: '21rem',
+    width: 'fit-content',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
