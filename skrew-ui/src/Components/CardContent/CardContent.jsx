@@ -1,11 +1,16 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { CardContentStyle } from './CardContentStyle'
+import CardScores from './CardScore/CardScores'
 import ViewMineText from './ViewMineText'
 import ViewOthersText from './ViewOthersText'
 
 export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
+  var lined = false;
+  if(cardNumber === 9 || cardNumber === 6){
 
+    lined = true
+  }
   const chooseComand = (number) => {
     if(number === 7 || number === 8){
       return (<ViewMineText cardText={cardText || ""} cardTextColor={numberColor}/>)
@@ -19,17 +24,12 @@ export default function CardContent({cardScore, cardText, cardNumber, cardBackgr
       <Grid item >
         <div className='TRball'></div>
         <div className='BLball'></div>
-
-        <Grid item className='TLCardScore'>
-            <Typography fontFamily={"'IBM Plex Mono', monospace"} fontSize={'2rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
-        </Grid>
-        <Grid item className='BRCardScore'>
-            <Typography fontFamily={"'IBM Plex Mono', monospace"} fontSize={'2rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
-        </Grid>
+        <CardScores borderColor={numberColor} cardScore={cardScore}/>
         <Grid item className="CardTxtNumber" display={'flex'} flexDirection={'column'} alignItems={'center'}>
             {chooseComand(cardNumber)}
             <Grid item className="iconNumber">
                 <Typography fontSize={'10rem'} fontWeight={'700'} fontFamily={"'IBM Plex Mono', monospace"} color={numberColor}>{cardNumber}</Typography>
+                {lined?<div className='underLine'/>:<></>}
             </Grid>
         {extraElements}
         </Grid>

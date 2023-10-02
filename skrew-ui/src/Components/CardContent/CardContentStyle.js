@@ -33,31 +33,6 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         left: '-14px',
         borderRadius: '2rem'
     },
-    "& .TLCardScore":{
-        backgroundColor: borderColor,
-        width: '3.2rem',
-        height: '4.5rem',
-        position: 'absolute',
-        top: '0',
-        left: '0',
-        borderRadius: '0px 25px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    "& .BRCardScore":{
-        backgroundColor: borderColor,
-        width: '3.2rem',
-        height: '4.5rem',
-        position: 'absolute',
-        bottom: '0',
-        right: '0',
-        borderRadius: '0px 25px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        transform: 'rotate(180deg)',
-    },
     "& .iconNumber":{
         width: '14rem',
         height: '14rem',
@@ -69,6 +44,13 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         border: 'solid',
         borderWidth: '7px',
         borderColor: borderColor
+    },
+    "& .numberUnderLine":{
+        top: '65%',
+        width: '8rem',
+        height: '8px',
+        background: borderColor,
+        position: 'absolute'
     }
   }
   ));
