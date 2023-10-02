@@ -5,10 +5,7 @@ import CardScores from './CardScore/CardScores'
 import ViewMineText from './View/ViewMineText'
 import ViewOthersText from './View/ViewOthersText'
 
-export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements}) {
-  var underLined = false;
-  if(cardNumber === 9 || cardNumber === 6)
-    underLined = true
+export default function CardContent({cardScore, cardText, cardNumber, cardBackgroundColor, numberColor, extraElements, underLined}) {
   
   const chooseComand = (number) => {
     if(number === 7 || number === 8){

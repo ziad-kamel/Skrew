@@ -1,12 +1,13 @@
 import { Menu, Style } from '@mui/icons-material';
 import { Grid, IconButton, Typography } from '@mui/material';
-import { useTheme } from "@mui/material/styles";
 import { Container } from '@mui/system';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { NavBarStyle } from './NavBarStyle';
 
 export default function NavBar() {
-    const theme = useTheme();
+    const navigate = useNavigate();
+    // const theme = useTheme();
   return (
     <NavBarStyle>
         <Container >
@@ -15,7 +16,19 @@ export default function NavBar() {
                     <Grid item className="iconBox">
                         <Style className='icon'/>
                     </Grid>
-                    <Typography variant='h5' fontWeight={'bold'} color={"#dca110"}>Skrew</Typography>
+                    <Typography variant='h5' fontWeight={'bold'} color={"#dca110"} onClick={()=>navigate('/home')}>Skrew</Typography>
+                </Grid>
+                <Grid item display={'flex'} alignItems={'center'} justifyContent={'space-between'} width={'22rem'} position={'relative'} right={'56px'}>
+                    <button onClick={()=>navigate('/1')}>1</button>
+                    <button onClick={()=>navigate('/2')}>2</button>
+                    <button onClick={()=>navigate('/3')}>3</button>
+                    <button onClick={()=>navigate('/4')}>4</button>
+                    <button onClick={()=>navigate('/5')}>5</button>
+                    <button onClick={()=>navigate('/6')}>6</button>
+                    <button onClick={()=>navigate('/7')}>7</button>
+                    <button onClick={()=>navigate('/8')}>8</button>
+                    <button onClick={()=>navigate('/9')}>9</button>
+                    <button onClick={()=>navigate('/10')}>10</button>
                 </Grid>
                 <IconButton color='info'>
                     <Menu />
