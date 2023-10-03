@@ -1,5 +1,5 @@
 import React from 'react'
-import GenericCard from '../GenericCard/GenericCard'
+import GenericCard from '../../GenericCard/GenericCard'
 
 export default function Three() {
   return (

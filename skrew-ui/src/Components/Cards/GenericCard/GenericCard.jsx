@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import { Container } from '@mui/system'
 import React from 'react'
-import CardContent from '../../../CardContent/CardContent'
+import CardContent from '../../CardContent/CardContent'
 import { GenericCardStyle } from './GenericCardStyle'
 
 export default function GenericCard({cardScore, cardNumber, numberColor, cardBackgroundColor, cardText, extraElements, underLined}) {
