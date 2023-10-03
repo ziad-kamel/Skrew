@@ -29,6 +29,7 @@ export default function NavBar() {
                     <button onClick={()=>navigate('/8')}>8</button>
                     <button onClick={()=>navigate('/9')}>9</button>
                     <button onClick={()=>navigate('/10')}>10</button>
+                    <button onClick={()=>navigate('/swap')}>swap</button>
                 </Grid>
                 <IconButton color='info'>
                     <Menu />

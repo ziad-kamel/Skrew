@@ -10,6 +10,7 @@ import Six from '../Components/Cards/BasicNumbers/6/Six';
 import Seven from '../Components/Cards/BasicNumbers/7/Seven';
 import Eight from '../Components/Cards/BasicNumbers/8/Eight';
 import Nine from '../Components/Cards/BasicNumbers/9/Nine';
+import Swap from '../Components/Cards/ComandCards/SwapCard/Swap';
 import NavBar from '../Components/NavBar/NavBar';
 import Home from '../pages/HomePage/Home';
 export default function AppRoutes() {
@@ -29,6 +30,7 @@ export default function AppRoutes() {
             <Route path='/8' element={<Eight/>}/>
             <Route path='/9' element={<Nine/>}/>
             <Route path='/10' element={<Ten/>}/>
+            <Route path='/swap' element={<Swap/>}/>
             </>
         </Routes>
     </Router>
