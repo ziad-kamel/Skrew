@@ -1,6 +1,7 @@
 import { Container } from '@mui/system'
 import React from 'react'
 import SwapComandContent from './SwapComandContent'
+import ThrewComandContent from './ThrewComandContent'
 import WachOneForEveryoneComandContent from './WachOneForEveryoneComandContent'
 
 export default function ComandContent({comand}) {
@@ -10,6 +11,9 @@ export default function ComandContent({comand}) {
         }
         else if(comand.isWachForEveryone){
             return <WachOneForEveryoneComandContent/>
+        }
+        else if(comand.isThrew){
+            return <ThrewComandContent/>
         }
     }
 

@@ -18,7 +18,7 @@ export default function NavBar() {
                     </Grid>
                     <Typography variant='h5' fontWeight={'bold'} color={"#dca110"} onClick={()=>navigate('/home')}>Skrew</Typography>
                 </Grid>
-                <Grid item display={'flex'} alignItems={'center'} justifyContent={'space-between'} width={'22rem'} position={'relative'} right={'56px'}>
+                <Grid item display={'flex'} alignItems={'center'} justifyContent={'space-between'} width={'26rem'} position={'relative'} right={'56px'}>
                     <button onClick={()=>navigate('/1')}>1</button>
                     <button onClick={()=>navigate('/2')}>2</button>
                     <button onClick={()=>navigate('/3')}>3</button>
@@ -29,7 +29,9 @@ export default function NavBar() {
                     <button onClick={()=>navigate('/8')}>8</button>
                     <button onClick={()=>navigate('/9')}>9</button>
                     <button onClick={()=>navigate('/10')}>10</button>
-                    <button onClick={()=>navigate('/swap')}>swap</button>
+                    <button onClick={()=>navigate('/swap')}>خدوهات</button>
+                    <button onClick={()=>navigate('/watchOneForEveryone')}>كعب داير</button>
+                    <button onClick={()=>navigate('/Threw')}>بصرة</button>
                 </Grid>
                 <IconButton color='info'>
                     <Menu />
