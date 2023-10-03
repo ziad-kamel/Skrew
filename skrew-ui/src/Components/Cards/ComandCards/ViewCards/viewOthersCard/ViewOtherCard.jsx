@@ -1,6 +1,6 @@
 import { Container } from '@mui/system';
 import React from 'react';
-import GenericCard from '../../../../GenericCard/GenericCard';
+import GenericCard from '../../../GenericCard/GenericCard';
 import OtherExtraElement from './OtherExtraElement';
 
 export default function viewOtherCard({cardScore, cardNumber, numberColor, cardText, underLined}) {
