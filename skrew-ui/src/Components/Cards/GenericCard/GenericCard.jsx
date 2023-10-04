@@ -4,7 +4,7 @@ import React from 'react'
 import CardContent from '../../CardContent/CardContent'
 import { GenericCardStyle } from './GenericCardStyle'
 
-export default function GenericCard({cardScore, cardNumber, numberColor, cardBackgroundColor, cardText, extraElements, underLined, comand}) {
+export default function GenericCard({cardScore, cardNumber, numberColor, cardBackgroundColor, cardText, extraElements, underLined, content}) {
   return (
     <GenericCardStyle >
         <Container>
@@ -18,7 +18,8 @@ export default function GenericCard({cardScore, cardNumber, numberColor, cardBac
                     cardBackgroundColor={cardBackgroundColor} 
                     cardText={cardText} 
                     underLined={underLined}
-                    comand={comand}/>
+                    content={content}
+                    />
                 </Grid>
             </Grid>
         </Container>

@@ -4,22 +4,22 @@ import SwapComandContent from './SwapComandContent'
 import ThrewComandContent from './ThrewComandContent'
 import WachOneForEveryoneComandContent from './WachOneForEveryoneComandContent'
 
-export default function ComandContent({comand}) {
-    const handelComandContent = () => {
-        if(comand.isSwap){
-            return <SwapComandContent/>
-        }
-        else if(comand.isWachForEveryone){
-            return <WachOneForEveryoneComandContent/>
-        }
-        else if(comand.isThrew){
-            return <ThrewComandContent/>
-        }
+const ChooseComandContent = (comand) => {
+    if(comand.isSwap){
+        return <SwapComandContent/>
     }
+    else if(comand.isWachForEveryone){
+        return <WachOneForEveryoneComandContent/>
+    }
+    else if(comand.isThrew){
+        return <ThrewComandContent/>
+    }
+}
+export default function ComandContent({comand}) {
 
   return (
     <Container>
-        {handelComandContent()}
+        {ChooseComandContent(comand)}
     </Container>
   )
 }

@@ -2,12 +2,8 @@ import React from 'react'
 import GenericCard from '../../GenericCard/GenericCard'
 
 export default function Swap () {
-  const swapComand = {
-    isSwap:true
-
-  }
 
   return (
-    <GenericCard cardScore={10} comand={swapComand}/>
+    <GenericCard cardScore={10} content={{comand:{isSwap:true}}}/>
   )
 }

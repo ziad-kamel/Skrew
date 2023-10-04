@@ -13,6 +13,7 @@ import Nine from '../Components/Cards/BasicNumbers/9/Nine';
 import Swap from '../Components/Cards/ComandCards/SwapCard/Swap';
 import Threw from '../Components/Cards/ComandCards/ThrewCard/Threw';
 import WatchOneForEveryone from '../Components/Cards/ComandCards/WatchOneForEveryoneCard/WatchOneForEveryone';
+import Plus20 from '../Components/Cards/SpecialCards/+20/Plus20';
 import NavBar from '../Components/NavBar/NavBar';
 import Home from '../pages/HomePage/Home';
 export default function AppRoutes() {
@@ -35,6 +36,7 @@ export default function AppRoutes() {
             <Route path='/swap' element={<Swap/>}/>
             <Route path='/watchOneForEveryone' element={<WatchOneForEveryone/>}/>
             <Route path='/threw' element={<Threw/>}/>
+            <Route path='/+20' element={<Plus20/>}/>
             </>
         </Routes>
     </Router>
