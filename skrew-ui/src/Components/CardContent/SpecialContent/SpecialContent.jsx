@@ -1,6 +1,6 @@
 import { Container } from '@mui/system'
 import React from 'react'
-import Plus20SpecialContent from './Plush20/Plus20SpecialContent'
+import Plus20SpecialContent from './Plus20/Plus20SpecialContent'
 
 const chooseSpecialContent = (special) =>{
     if(special.isPlus20){
