@@ -2,6 +2,7 @@ import { Coronavirus, StarRateSharp } from '@mui/icons-material/';
 import { Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
+import GreenSpecialContent from '../GreenSpecialContent/GreenSpecialContent';
 import RedSpecialContent from '../RedSpecialContent/RedSpecialContent';
 import { SpecialContentStyle } from './SpecialContentStyle';
 
@@ -31,7 +32,7 @@ const RenderSpecialContent = (special) => {
   if(special.isScrew){
     return <RedSpecialContent />
   } else if (special.isScrewdriver){
-    return <div></div>
+    return <GreenSpecialContent />
   } else {
     return (
       <SpecialContentStyle>

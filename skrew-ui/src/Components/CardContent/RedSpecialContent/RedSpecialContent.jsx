@@ -6,12 +6,12 @@ export default function RedSpecialContent() {
     <Grid item width={"15rem"} height={"18.5rem"} display={"flex"} direction={"column"} alignItems={"center"} justifyContent={"space-between"}>
         <Grid item width={"inherit"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
             <ReactCurvedText width='240'
-            height='80'
-            cx='113'
-            cy='98'
-            rx='120'
+            height='120'
+            cx='100'
+            cy='95'
+            rx='140'
             ry='50'
-            startOffset='60'
+            startOffset='90'
             reversed={true}
             text='سكرو'
             textProps={{"style": {"fontSize": "90" , fontFamily: "Ruwudu", fontWeight: "bold"}}}
