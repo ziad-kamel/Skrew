@@ -34,6 +34,7 @@ export default function NavBar() {
                     <button onClick={()=>navigate('/Threw')}>بصرة</button>
                     <button onClick={()=>navigate('/+20')}>+20</button>
                     <button onClick={()=>navigate('/-1')}>-1</button>
+                    <button onClick={()=>navigate('/screw')}>skrew</button>
                 </Grid>
                 <IconButton color='info'>
                     <Menu />

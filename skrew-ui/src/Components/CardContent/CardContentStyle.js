@@ -32,6 +32,13 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         bottom: '-14px',
         left: '-14px',
         borderRadius: '2rem'
+    },
+    "& .contentFrame":{
+        width: '17rem',
+        height: '29rem',
+        border: 'solid',
+        borderWidth: '9px',
+        borderColor: 'white'
     }
   }
   ));

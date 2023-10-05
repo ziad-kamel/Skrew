@@ -15,6 +15,7 @@ import Threw from '../Components/Cards/ComandCards/ThrewCard/Threw';
 import WatchOneForEveryone from '../Components/Cards/ComandCards/WatchOneForEveryoneCard/WatchOneForEveryone';
 import Plus20 from '../Components/Cards/SpecialCards/+20/Plus20';
 import MinusOne from '../Components/Cards/SpecialCards/-1/MinusOne';
+import Screw from '../Components/Cards/SpecialCards/Screw/Screw';
 import NavBar from '../Components/NavBar/NavBar';
 import Home from '../pages/HomePage/Home';
 export default function AppRoutes() {
@@ -39,6 +40,7 @@ export default function AppRoutes() {
             <Route path='/threw' element={<Threw/>}/>
             <Route path='/+20' element={<Plus20/>}/>
             <Route path='/-1' element={<MinusOne/>}/>
+            <Route path='/screw' element={<Screw/>}/>
             </>
         </Routes>
     </Router>

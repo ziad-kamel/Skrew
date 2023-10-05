@@ -2,6 +2,7 @@ import { Coronavirus, StarRateSharp } from '@mui/icons-material/';
 import { Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
+import RedSpecialContent from '../RedSpecialContent/RedSpecialContent';
 import { SpecialContentStyle } from './SpecialContentStyle';
 
 var ContentsValue={};
@@ -27,15 +28,21 @@ const RenderIcons = (gridStyle, special) => {
 }
 
 const RenderSpecialContent = (special) => {
-  return (
-    <SpecialContentStyle>
-        <Grid item display={"flex"} alignItems={"center"} justifyContent={"center"} height={"21rem"} borderRadius={"7rem 0px"} bgcolor={ContentsValue.bgcolor}>
+  if(special.isScrew){
+    return <RedSpecialContent />
+  } else if (special.isScrewdriver){
+    return <div></div>
+  } else {
+    return (
+      <SpecialContentStyle>
+        <Grid item display={"flex"} alignItems={"center"} justifyContent={"center"} width={"13rem"} height={"21rem"} borderRadius={"7rem 0px"} bgcolor={ContentsValue.bgcolor}>
             {RenderIcons("TLicons",special)}
             <Typography fontFamily={"'Alfa Slab One', cursive"} fontSize={ContentsValue.fontsize} sx={{transform: "skewY(349deg)", color: ContentsValue.color}}>{ContentsValue.score}</Typography>
             {RenderIcons("BRicons",special)}
         </Grid>
     </SpecialContentStyle>
   )
+}
 }
 
 const VirusIcons = (gridStyle) => {
