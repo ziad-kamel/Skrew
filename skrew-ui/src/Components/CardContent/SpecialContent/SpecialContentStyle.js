@@ -1,17 +1,17 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-export const Plus20SpecialContentStyle = styled(Box)(({ theme, borderColor}) => ({
-    "& .TLvirus":{
+export const SpecialContentStyle = styled(Box)(({ theme}) => ({
+    "& .TLicons":{
         width: '9rem',
         display: 'flex',
         alignItems: 'center',
         transform: 'rotate(-45deg)',
         position: 'absolute',
-        top: '60px',
+        top: '57px',
         left: '-6px'
     },
-    "& .BRvirus":{
+    "& .BRicons":{
         display: 'flex',
         alignItems: 'center',
         width: '9rem',

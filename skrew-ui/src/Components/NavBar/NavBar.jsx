@@ -33,6 +33,7 @@ export default function NavBar() {
                     <button onClick={()=>navigate('/watchOneForEveryone')}>كعب داير</button>
                     <button onClick={()=>navigate('/Threw')}>بصرة</button>
                     <button onClick={()=>navigate('/+20')}>+20</button>
+                    <button onClick={()=>navigate('/-1')}>-1</button>
                 </Grid>
                 <IconButton color='info'>
                     <Menu />
