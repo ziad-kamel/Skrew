@@ -9,7 +9,7 @@ export default function CardContent({cardScore, cardText, cardNumber, cardBackgr
 
   return (
     <CardContentStyle cardBackgroundColor={cardBackgroundColor} borderColor={numberColor}>
-      <Grid item width={"17rem"} justifyContent={'center'}>
+      <Grid item width={'fit-content'} justifyContent={'center'}>
         <Grid item className='contentFrame' display={'flex'} justifyContent={"center"} alignItems={"center"}>
         <div className='TRball'></div>
         <div className='BLball'></div>

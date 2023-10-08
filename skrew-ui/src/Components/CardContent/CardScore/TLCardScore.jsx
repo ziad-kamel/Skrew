@@ -14,7 +14,7 @@ export default function TLCardScore({cardScore, borderColor, lined}) {
     <TLCardScoreStyle borderColor={borderColor}>
         <Grid container justifyContent={'center'} >
             {RenderNumber()}
-            <Typography fontFamily={"'IBM Plex Mono', monospace"} fontSize={'1.7rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
+            <Typography fontFamily={"'IBM Plex Mono', monospace"} fontSize={'0.8rem'} fontWeight={'800'} color={'white'}>{cardScore}</Typography>
             {lined?<div className='underLine'/>:<></>}
         </Grid>
     </TLCardScoreStyle>

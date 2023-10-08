@@ -21,7 +21,7 @@ export default function CardCenterContent({cardText, numberColor, cardNumber, ex
         if (!content){
           return(
             <Grid item className="iconNumber">
-                <Typography fontSize={'10rem'} fontWeight={'700'} fontFamily={"'IBM Plex Mono', monospace"} color={numberColor}>{cardNumber}</Typography>
+                <Typography fontSize={'5rem'} fontWeight={'700'} fontFamily={"'IBM Plex Mono', monospace"} color={numberColor}>{cardNumber}</Typography>
                 {underLined?<div className='numberUnderLine'/>:<></>}
             </Grid>
           )
@@ -36,7 +36,7 @@ export default function CardCenterContent({cardText, numberColor, cardNumber, ex
 
   return (
     <CardCenterContentStyle borderColor={numberColor}>
-        <Grid item display={'flex'} flexDirection={'column'} alignItems={'center'}>
+        <Grid item display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={"center"} height={"17rem"}>
             {chooseView(cardNumber)}
             {chooseContent(content)}
             {extraElements}

@@ -3,13 +3,13 @@ import BRCardScore from './BRCardScore';
 import TLCardScore from './TLCardScore';
 
 export default function CardScores({cardScore, borderColor, content}) {
-  var retval = false;
+  var lined = false;
   if(cardScore === 6 || cardScore === 9)
-  retval = true;
+  lined = true;
   return (
     <>
-        <TLCardScore borderColor={borderColor} cardScore={cardScore} lined={retval} content={content}/>
-        <BRCardScore borderColor={borderColor} cardScore={cardScore} lined={retval} content={content}/>
+        <TLCardScore borderColor={borderColor} cardScore={cardScore} lined={lined} content={content}/>
+        <BRCardScore borderColor={borderColor} cardScore={cardScore} lined={lined} content={content}/>
     </>
   )
 }

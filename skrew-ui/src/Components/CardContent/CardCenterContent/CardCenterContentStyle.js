@@ -4,9 +4,9 @@ import { styled } from "@mui/system";
 export const CardCenterContentStyle = styled(Box)(({ theme, borderColor}) => ({
 
     "& .iconNumber":{
-        width: '14rem',
-        height: '14rem',
-        margin: "22px",
+        width: '9rem',
+        height: '9rem',
+        // margin: "22px",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -17,8 +17,8 @@ export const CardCenterContentStyle = styled(Box)(({ theme, borderColor}) => ({
     },
     "& .numberUnderLine":{
         top: '65%',
-        width: '8rem',
-        height: '8px',
+        width: '5rem',
+        height: '6px',
         background: borderColor,
         position: 'absolute'
     }

@@ -1,6 +1,5 @@
 import { Coronavirus, StarRateSharp } from '@mui/icons-material/';
 import { Grid, Typography } from '@mui/material';
-import { Container } from '@mui/system';
 import React from 'react';
 import GreenSpecialContent from '../GreenSpecialContent/GreenSpecialContent';
 import RedSpecialContent from '../RedSpecialContent/RedSpecialContent';
@@ -14,7 +13,7 @@ const RenderIcons = (gridStyle, special) => {
       score: '+20',
       bgcolor: "firebrick",
       color: "#42b593",
-      fontsize: "8.2rem"
+      fontsize: "4.5rem"
     }
     return VirusIcons(gridStyle)
   } else if(special.isMinus){
@@ -22,7 +21,7 @@ const RenderIcons = (gridStyle, special) => {
       score: '-1',
       bgcolor: "#0ea30e",
       color: "gold",
-      fontsize: "14rem"
+      fontsize: "7rem"
     }
     return StarsIcons(gridStyle)
   }
@@ -36,7 +35,7 @@ const RenderSpecialContent = (special) => {
   } else {
     return (
       <SpecialContentStyle>
-        <Grid item display={"flex"} alignItems={"center"} justifyContent={"center"} width={"13rem"} height={"21rem"} borderRadius={"7rem 0px"} bgcolor={ContentsValue.bgcolor}>
+        <Grid item display={"flex"} alignItems={"center"} justifyContent={"center"} margin={"17px"} width={"7rem"} height={"14rem"} borderRadius={"5rem 0px"} bgcolor={ContentsValue.bgcolor}>
             {RenderIcons("TLicons",special)}
             <Typography fontFamily={"'Alfa Slab One', cursive"} fontSize={ContentsValue.fontsize} sx={{transform: "skewY(349deg)", color: ContentsValue.color}}>{ContentsValue.score}</Typography>
             {RenderIcons("BRicons",special)}
@@ -49,9 +48,9 @@ const RenderSpecialContent = (special) => {
 const VirusIcons = (gridStyle) => {
   return (
       <Grid item className={`${gridStyle}`}>
-          <Coronavirus sx={{fontSize: "2rem", color:"#42b593"}}/>
-          <Coronavirus sx={{fontSize: "4.3rem", color:"#42b593"}}/>
-          <Coronavirus sx={{fontSize: "2rem", color:"#42b593"}}/>
+          <Coronavirus sx={{fontSize: "1.3rem", color:"#42b593"}}/>
+          <Coronavirus sx={{fontSize: "2.3rem", color:"#42b593"}}/>
+          <Coronavirus sx={{fontSize: "1.3rem", color:"#42b593"}}/>
       </Grid>
       
   )
@@ -59,9 +58,9 @@ const VirusIcons = (gridStyle) => {
 const StarsIcons = (gridStyle) => {
   return (
       <Grid item className={`${gridStyle}`}>
-          <StarRateSharp sx={{fontSize: "2rem", color:"gold"}}/>
-          <StarRateSharp sx={{fontSize: "5rem", color:"gold"}}/>
-          <StarRateSharp sx={{fontSize: "2rem", color:"gold"}}/>
+          <StarRateSharp sx={{fontSize: "1.3rem", color:"gold"}}/>
+          <StarRateSharp sx={{fontSize: "3rem", color:"gold"}}/>
+          <StarRateSharp sx={{fontSize: "1.3rem", color:"gold"}}/>
       </Grid>
       
   )
@@ -69,8 +68,8 @@ const StarsIcons = (gridStyle) => {
 
 export default function SpecialContent({special}) {
   return (
-    <Container >
+    <Grid container sx={{display: "flex", alignItems: "center", height: "17rem"}}>
         {RenderSpecialContent(special)}
-    </Container>
+    </Grid>
   )
 }
