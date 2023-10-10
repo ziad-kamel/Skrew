@@ -10,6 +10,7 @@ import Six from '../Components/Cards/BasicNumbers/6/Six';
 import Seven from '../Components/Cards/BasicNumbers/7/Seven';
 import Eight from '../Components/Cards/BasicNumbers/8/Eight';
 import Nine from '../Components/Cards/BasicNumbers/9/Nine';
+import CardBack from '../Components/Cards/CardBack/CardBack';
 import Swap from '../Components/Cards/ComandCards/SwapCard/Swap';
 import Threw from '../Components/Cards/ComandCards/ThrewCard/Threw';
 import WatchOneForEveryone from '../Components/Cards/ComandCards/WatchOneForEveryoneCard/WatchOneForEveryone';
@@ -43,6 +44,7 @@ export default function AppRoutes() {
             <Route path='/-1' element={<MinusOne/>}/>
             <Route path='/screw' element={<Screw/>}/>
             <Route path='/screwdriver' element={<Screwdriver/>}/>
+            <Route path='/back' element={<CardBack/>}/>
             </>
         </Routes>
     </Router>
