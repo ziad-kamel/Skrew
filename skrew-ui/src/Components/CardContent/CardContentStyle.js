@@ -20,8 +20,8 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         height: '2rem',
         backgroundColor: borderColor,
         position: 'absolute',
-        top: '-7px',
-        right: '-7px',
+        top: '-14px',
+        right: '-14px',
         borderRadius: '2rem'
     },
     "& .BLball":{
@@ -29,8 +29,8 @@ export const CardContentStyle = styled(Box)(({ theme, cardBackgroundColor, borde
         height: '2rem',
         backgroundColor: borderColor,
         position: 'absolute',
-        bottom: '-7px',
-        left: '-7px',
+        bottom: '-14px',
+        left: '-14px',
         borderRadius: '2rem'
     },
     "& .contentFrame":{

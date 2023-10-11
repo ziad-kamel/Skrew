@@ -19,6 +19,7 @@ import MinusOne from '../Components/Cards/SpecialCards/-1/MinusOne';
 import Screw from '../Components/Cards/SpecialCards/Screw/Screw';
 import Screwdriver from '../Components/Cards/SpecialCards/ScrewDriver/Screwdriver';
 import NavBar from '../Components/NavBar/NavBar';
+import PlayerCardsBox from '../Components/PlayerCards/PlayerCardsBox';
 import Home from '../pages/HomePage/Home';
 export default function AppRoutes() {
   return (
@@ -45,6 +46,7 @@ export default function AppRoutes() {
             <Route path='/screw' element={<Screw/>}/>
             <Route path='/screwdriver' element={<Screwdriver/>}/>
             <Route path='/back' element={<CardBack/>}/>
+            <Route path='/playerCards' element={<PlayerCardsBox/>}/>
             </>
         </Routes>
     </Router>
