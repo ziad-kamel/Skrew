@@ -1,8 +1,8 @@
 import React from 'react'
-import One from '../BasicNumbers/1/One'
+import GenericCard from '../GenericCard/GenericCard'
 
 export default function CardBack() {
   return (
-    <One/>
+    <GenericCard cardBack={true} numberColor={"white"}/>
   )
 }

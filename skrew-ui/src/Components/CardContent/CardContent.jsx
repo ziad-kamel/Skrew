@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material'
 import React from 'react'
+import CardBackContent from './CardBackContent/CardBackContent'
 import CardCenterContent from './CardCenterContent/CardCenterContent'
 import { CardContentStyle } from './CardContentStyle'
 import CardScores from './CardScore/CardScores'
@@ -34,7 +35,7 @@ export default function CardContent({cardBack, cardScore, cardText, cardNumber, 
   return (
     <CardContentStyle cardBackgroundColor={cardBackgroundColor} borderColor={numberColor}>
       <Grid item width={'fit-content'} justifyContent={'center'}>
-      {!cardBack?cardInnerContent(): cardBackInnerContent()}
+      {!cardBack?cardInnerContent(): <CardBackContent/>}
       </Grid>
     </CardContentStyle>
   )
