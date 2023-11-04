@@ -1,7 +1,7 @@
 # Skrew
 Card Game made by ***Yahya Azzam***
 
-#tools
+# tools
 React for building the front-end
 mui for the components and theams
 
