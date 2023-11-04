@@ -9,10 +9,11 @@ export const HomeStyle = styled(Box)(({ theme }) => ({
         alignItems:'center',
         backgroundImage: "linear-gradient(90deg, #e924c4, #ffd300)"
     },
-    "& .card p":{
+    "& .card a":{
         fontFamily: "monospace",
         fontWeight: "bold",
-        fontSize: "1.36rem"
+        fontSize: "1.36rem",
+        color: "rgba(0, 0, 0, 0.87)"
     }
     
   }

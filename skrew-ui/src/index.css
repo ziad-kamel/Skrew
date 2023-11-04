@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Amiri&family=Changa:wght@700&family=Dela+Gothic+One&family=IBM+Plex+Mono:wght@700&family=Lemonada:wght@700&family=Reem+Kufi+Fun&family=Ruwudu&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(270deg, rgb(79, 30, 194), rgb(110, 35, 127));
