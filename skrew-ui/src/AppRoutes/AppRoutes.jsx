@@ -27,7 +27,7 @@ export default function AppRoutes() {
       <NavBar />
         <Routes>
             <>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/' element={<Home/>}/>
             <Route path='/1' element={<One/>}/>
             <Route path='/2' element={<Two/>}/>
             <Route path='/3' element={<Three/>}/>

@@ -25,7 +25,7 @@ export default function NavBar() {
                     <Grid item className="iconBox">
                         <Style className='icon'/>
                     </Grid>
-                    <Typography variant='h5' fontWeight={'bold'} color={"#dca110"} onClick={()=>navigate('/home')}>Skrew</Typography>
+                    <Typography variant='h5' fontWeight={'bold'} color={"#dca110"} onClick={()=>navigate('/')} sx={{cursor:"pointer"}}>Skrew</Typography>
                 </Grid>
 
                 <IconButton color='info'>
